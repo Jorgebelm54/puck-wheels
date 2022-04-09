@@ -10,8 +10,12 @@ html {
 }
 
 body {
-background-image: url("./assets/img/car.jpeg");
-font-family: sans-serif;
+  font-family: sans-serif;
+}
+.landing-bg{
+  background-image: url("./assets/img/car.jpeg");
+  width:100vw;
+  height: 100vh;
 }
 
 .navbar{
