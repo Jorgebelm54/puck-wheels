@@ -2,6 +2,7 @@ import './App.css';
 import React from "react";
 
 import Landing from "./pages/Landing";
+import Home from "./pages/Home";
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
         <div>
           <Landing />
-          
+          {/* <Home /> */}
     
         </div>
 
