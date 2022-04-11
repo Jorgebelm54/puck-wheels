@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+// import { useMutation } from "@apollo/client";
+// import { LOGIN } from "../utils/mutations";
 
 const ModalSignIn = ({onClose}) => {
 
@@ -7,6 +9,7 @@ const ModalSignIn = ({onClose}) => {
         email: "",
         password: ""
     });
+    // const [login] = useMutation(LOGIN);
 
         const handleInputEmail = (e) => {
         const value = e.target.value;
@@ -17,11 +20,20 @@ const ModalSignIn = ({onClose}) => {
             setInputs({password: value});
         };
 
-        const handleSubmit = e => {
+        const handleSubmit = async e => {
             e.preventDefault();
             onClose(false);
-        }
-
+            // try {
+              // const mutationResponse = await login({
+                // variables: { username: inputs.username, password: inputs.password },
+              // });
+              // const token = mutationResponse.data.login.token;
+              // Auth.login(token);
+            // } catch (e) {
+            //   console.log(e);
+            }
+        // }
+      
 
     return (
         <>
@@ -44,7 +56,7 @@ const ModalSignIn = ({onClose}) => {
 				</button>				
 			</form>
 		</div>
-		<div class="screen__background">
+		<div className="screen__background">
 			<span className="screen__background__shape screen__background__shape4"></span>
 			<span className="screen__background__shape screen__background__shape3"></span>		
 			<span className="screen__background__shape screen__background__shape2"></span>

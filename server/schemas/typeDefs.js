@@ -4,7 +4,7 @@ const typeDefs = gql `
     type Query {
         me: User
     }
-    input saveBookInput {
+    input saveCarInput {
         model: String
         description: String
         image: String

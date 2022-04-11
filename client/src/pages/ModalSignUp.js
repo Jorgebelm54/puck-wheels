@@ -22,8 +22,6 @@ const ModalSignUp = ({onClose}) => {
             onClose(false);
 }
 
-
-
     return (
         <>
 <div className="container">
@@ -45,7 +43,7 @@ const ModalSignUp = ({onClose}) => {
 				</button>				
 			</form>
 		</div>
-		<div class="screen__background">
+		<div className="screen__background">
 			<span className="screen__background__shape screen__background__shape4"></span>
 			<span className="screen__background__shape screen__background__shape3"></span>		
 			<span className="screen__background__shape screen__background__shape2"></span>

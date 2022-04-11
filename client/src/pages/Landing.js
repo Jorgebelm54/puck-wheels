@@ -10,7 +10,7 @@ const [isModalSignUp, setModalSignUp] = useState(false);
     return (
     <>
         <div className="landing-bg">
-            <div class="navbar">
+            <div className="navbar">
                 <div className="logo"></div>        
                 <span className="login-btns">
                 <button className="login-btn" onClick={() => setModalSignIn(true)}>
