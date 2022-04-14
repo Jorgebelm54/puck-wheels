@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ModelA from "./ModelA.js";
 import ModelB from "./ModelB.js";
 import ModelC from "./ModelC.js";
@@ -63,15 +64,16 @@ const Home = () => {
             <footer style={{ display: "flex", width: '100vw', backgroundColor: 'black', padding: '24px', justifyContent: 'center' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', width: '80%'}}>
                     <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>			
-                        <p style={{fontSize: '24px', color: 'white', marginBottom: '24px', fontWeight: 'bold'}} href="/About">About Us </p>
-                        <a style={{color: 'grey', fontSize: '24px', textDecoration: 'none'}} href="#About">Meet Our Team</a>
-                        <a style={{color: 'grey', fontSize: '24px', textDecoration: 'none'}} href="#About">Contact us </a>
+                        <p style={{fontSize: '24px', color: 'white', marginBottom: '24px', fontWeight: 'bold'}} ><Link class="a"to ="/">Home</Link> </p>
+                        <a style={{color: 'grey', fontSize: '24px', textDecoration: 'none'}} ><Link class="a"to ="/About">About</Link></a>
+                        <a style={{color: 'grey', fontSize: '24px', textDecoration: 'none'}} ><Link class="a"to ="/Contact">Contact</Link></a>
+                    
                        
                     </div>                    
                     <div style={{display: 'flex', flexDirection: 'column', gap: '16px'}}>			
-                        <p style={{fontSize: '24px', color: 'white', marginBottom: '24px', fontWeight: 'bold'}} href="#Inventory">Inventory</p>
-                        <a style={{color: 'grey', fontSize: '24px', textDecoration: 'none'}} href="#used">Used</a>
-                        <a style={{color: 'grey', fontSize: '24px', textDecoration: 'none'}} href="#Inventory">New</a>
+                        <p style={{fontSize: '24px', color: 'white', marginBottom: '24px', fontWeight: 'bold'}} ><Link class="a" to ="/Inventory">Inventory</Link></p>
+                        <a style={{color: 'grey', fontSize: '24px', textDecoration: 'none'}} ><Link class="a"to ="/Used">Used</Link></a>
+                        <a style={{color: 'grey', fontSize: '24px', textDecoration: 'none'}} ><Link class="a"to ="/New">New</Link></a>
                         
                     </div>                    
                                   
