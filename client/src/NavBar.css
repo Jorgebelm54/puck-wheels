@@ -1,0 +1,48 @@
+.a{
+    color: white;
+    text-decoration: none;
+}
+
+.login-btns{
+    display: grid;
+    
+    text-decoration: none;
+    color: white;
+    outline: none;
+    margin: 0,0,0,0;
+   
+
+}
+
+.login-btn{
+outline: none;
+text-decoration: none;
+position: relative;
+bottom: 50px;
+}
+
+a:hover {
+    background-color: none;
+    outline: none;
+    text-decoration: none;
+    color: white;
+  }
+
+
+
+  .ul {
+      position: relative;
+      padding-top: 10px;
+      margin-top: 50px;
+      margin-left: 50px;;
+      text-decoration: none;
+      color: white;
+      outline: none;
+  }
+  
+
+  .logo {
+  position: relative;
+   bottom: 40px;
+   left: 20px;
+  }

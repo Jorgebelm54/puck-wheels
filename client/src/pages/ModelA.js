@@ -6,7 +6,7 @@ const ModelA = () => {
 
     return (
     <>
-    <div class="box">
+    <div className="box">
         <div className="model-container">
             <div className="image-bg">
             <div className="row">
